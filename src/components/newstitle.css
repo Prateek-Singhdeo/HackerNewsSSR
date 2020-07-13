@@ -1,0 +1,30 @@
+.votearrow {
+    cursor: pointer;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid darkgrey;
+    margin: 6px;
+  }
+  .title-container{
+    display: flex;
+  }
+  
+  .title-container .title{
+    font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color: #000000;;
+  } 
+
+  .heading{
+    display: flex;
+  }
+  
+  @media only screen
+  and (max-width : 750px) {
+    .title-container{
+      flex-direction: column;
+    }
+    .sitebit{
+      margin-left: 28px;
+    }
+  }

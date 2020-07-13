@@ -1,0 +1,17 @@
+.subtext a:visited { color:#828282; }
+.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
+.subtext a:hover { text-decoration:underline; }
+.hide{cursor: pointer;}
+.footer-container{
+    display: flex;
+    margin-left: 28px;
+}
+
+@media only screen
+and (max-width : 750px) {
+  .footer-container{
+    flex-direction: column;
+  }
+}
+
+.upvotes {color: blue;}

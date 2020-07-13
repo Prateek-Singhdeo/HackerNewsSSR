@@ -1,0 +1,5 @@
+export const FETCH_DATA = 'FETCHDATA';
+export const LOADING_INDICATOR = 'LOADING';
+export const UPDATE_PAGENUM = 'UPDATE_PAGENUM';
+export const MODIFY_DATA = 'MODIFY_DATA';
+export const FETCH_NEWS_FAILED = 'FETCH_NEWS_FAILED';
