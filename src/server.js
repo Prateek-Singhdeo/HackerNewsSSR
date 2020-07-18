@@ -22,7 +22,6 @@ app.use("/public" ,express.static(path.resolve(__dirname, "../public")));
 app.get( "/*", ( req, res ) => {
     const context = { };
     const store = createStore( reducers, applyMiddleware( thunk ) );
-    console.log('here');
     let hiddenIds = [];
     let upvotedIds = {};
     if(req.cookies.hidden) {
