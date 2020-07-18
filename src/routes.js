@@ -1,8 +1,8 @@
-import Home from "./components/Home";
+import Newsfeed from "./components/Newsfeed";
 
 export default [
     {
         path: "/",
-        component: Home
+        component: Newsfeed
     }
 ];

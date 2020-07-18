@@ -1,58 +1,69 @@
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+caption {
+  display: none;
+}
+.hide {
+  cursor: pointer;
+}
+div {
+  box-sizing: border-box;
+}
+
+.table-container {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+.flag-icon {
+  margin-right: 0.1em;
+}
+
+td {
+  border: 1px solid #d9d9d9;
+  padding: 0.5em;
+}
+
+th {
+  background: rgb(255, 102, 0);
+  color: white;
+  padding: 0.5em;
+  border: 1px solid rgb(255, 102, 0);
+}
+
+
+.flex-row, .flex-cell {
+  text-align: center;
+  border: 0;
+}
 .votearrow {
-    cursor: pointer;
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid darkgrey;
-    margin: 6px;
-  }
-  .title-container{
-    display: flex;
-  }
-  
-  .title-container .title{
-    font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color: #000000;;
-  } 
-
-  .heading{
-    display: flex;
-  }
-  
-  @media only screen
-  and (max-width : 750px) {
-    .title-container{
-      flex-direction: column;
-    }
-    .sitebit{
-      margin-left: 28px;
-    }
-  }
-.subtext a:visited { color:#828282; }
-.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
-.subtext a:hover { text-decoration:underline; }
-.hide{cursor: pointer;}
-.footer-container{
-    display: flex;
-    margin-left: 28px;
+  cursor: pointer;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid darkgrey;
+  margin: 6px;
 }
-
-@media only screen
-and (max-width : 750px) {
-  .footer-container{
-    flex-direction: column;
-  }
+.newsdetailheader{
+  text-align: left;
 }
-
-.upvotes {color: blue;}
-.index { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
-.newsfeed{margin-top: 15px}
-
-.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
-.comhead a:link, .subtext a:visited { color:#828282; }
-.comhead a:hover { text-decoration:underline; }
-
-
+.newsDtails {
+  text-align: left;
+  width: 85%;
+}
+.newsItem{
+  padding-right: 6px;
+}
+.comments {
+  width: 5%;;
+}
 
 .more{
   font-family:Verdana, Geneva, sans-serif; font-size: 10pt; font-weight: bold; color: rgb(255, 102, 0);
@@ -66,47 +77,35 @@ and (max-width : 750px) {
   height: 3px;
   border-spacing: 0;
 }
-
-@media only screen
-and (max-width : 750px) {
-  .sitebit{
-    margin-left: 28px;
+.index { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
+.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+.comhead a:link, .subtext a:visited { color:#828282; }
+.comhead a:hover { text-decoration:underline; }
+@media only screen and (max-width: 767px) {
+  th, td {
+    width: auto;
+    display: block;
+    border: 0;
   }
-}
-.navbar{
-    display: flex;
-    background-color: rgb(255, 102, 0);
-}
+  
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-grow: 1;
-}
+  th {
+    border-left: solid 1px #1565C0;
+    border-right: solid 1px #1565C0;
+    border-bottom: solid 1px #1565C0;
+  }
 
-.nav-item{
-    padding: 0 3px;
-    font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#222222;
-}
-.nav-item:first-child{
-    font-weight: bold;
-}
-a{
-    color: #000000;
-}
-
-.signin{
-    align-self: end;
-}
-
-@media only screen
-and (max-width : 750px) {
-    .nav-links{
-        flex-wrap: wrap;
-    }
+  td {
+    border-left: solid 1px #d9d9d9;
+    border-right: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+  }
+  .flex-row, .flex-cell {
+    text-align: left;
+  }
+  .flex-row {
+    width: 100%;
+  }
 }
 .App{
     border: 0px;
@@ -129,6 +128,7 @@ and (min-width : 300px)
 and (max-width : 750px) {
     .main-container{
         width: 100%;
+        background-color: white;
     }
 }
 body {
@@ -152,3 +152,5 @@ body {
   margin-top: 20px;
   background: rgba(128, 128, 128, .1);
 }
+
+/*# sourceMappingURL=styles.css.map*/

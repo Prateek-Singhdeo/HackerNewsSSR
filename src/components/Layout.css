@@ -19,5 +19,6 @@ and (min-width : 300px)
 and (max-width : 750px) {
     .main-container{
         width: 100%;
+        background-color: white;
     }
 }

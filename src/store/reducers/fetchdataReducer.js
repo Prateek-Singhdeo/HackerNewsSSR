@@ -1,5 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import thunkMiddleware from "redux-thunk";
+import { combineReducers } from "redux";
 import * as actionTypes from '../actions/actionTypes';
 
 const localinitialState = {
@@ -41,6 +40,8 @@ const setDatareducer = (state=localinitialState, {type,payload}) =>{
                     error:true,
                     loading:false
                 }    
+             case actionTypes.RESET_DATA:
+                return payload   
         default:
             return state;
     }
