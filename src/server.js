@@ -18,6 +18,7 @@ const app = express();
 app.use(cookieParser())
 app.use( express.static( path.resolve( __dirname, "../dist" ) ) );
 app.use("/public" ,express.static(path.resolve(__dirname, "../public")));
+const port = process.env.PORT || 3000;
 
 app.get( "/*", ( req, res ) => {
     const context = { };
@@ -76,7 +77,9 @@ app.get( "/*", ( req, res ) => {
 } );
 
 
-app.listen( 3000 );
+app.listen( port,()=> {
+    console.log(`server is up on port ${port}`);
+} );
 
 function htmlTemplate( reactDom, reduxState, helmet) {
     return `
