@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
     "dev": "npm-run-all --parallel server client",
-    "server": "nodemon index.js",
+    "server": "node index.js",
     "client": "webpack --watch --progress",
     "start": "npm-run-all --parallel server build"
   },
