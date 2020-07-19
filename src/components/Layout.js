@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import routes from "../routes";
-import './layout.css';
+import * as layoutcss from './layout.css';
 
 class Layout extends React.Component {
     constructor() {

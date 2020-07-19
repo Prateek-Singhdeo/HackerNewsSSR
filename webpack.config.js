@@ -22,7 +22,6 @@ const plugins = [
 module.exports = {
     mode: dev ? "development" : "production",
     context: path.join( __dirname, "src" ),
-    devtool: dev ? "none" : "source-map",
     entry: ['babel-polyfill', './client.js'],
     resolve: {
         modules: [
