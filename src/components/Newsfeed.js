@@ -6,7 +6,6 @@ import Cookies from 'cookies-js';
 import { parse } from 'url';
 import { Helmet } from 'react-helmet';
 import TimeAgo from 'react-timeago'
-// import 'font-awesome/css/font-awesome.min.css'
 import FontAwesome from 'react-fontawesome'
 import './newsfeed.css'
 

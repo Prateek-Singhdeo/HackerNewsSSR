@@ -11,7 +11,9 @@
     "dev": "npm-run-all --parallel server client",
     "server": "node index.js",
     "client": "webpack --watch --progress",
-    "start": "npm-run-all --parallel server build"
+    "install-package": "npm install",
+    "heroku-postbuild": "npm run install-package && npm run build",
+    "start": "npm run server"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
