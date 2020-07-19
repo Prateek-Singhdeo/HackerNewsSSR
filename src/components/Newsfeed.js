@@ -7,7 +7,6 @@ import { parse } from 'url';
 import { Helmet } from 'react-helmet';
 import TimeAgo from 'react-timeago'
 import FontAwesome from 'react-fontawesome'
-import "./Newsfeed.css";
 
 class Newsfeed extends React.Component {
     constructor ( props ) {
@@ -44,6 +43,9 @@ class Newsfeed extends React.Component {
         }
     }
     
+    /* type: function 
+       description: upvotes the particular news item and stores the corresponding id in the cookie
+    */
     vote(itemId,index){
       let upvotedIds = {};
        if(Cookies.get('upvotes')){
@@ -68,6 +70,7 @@ class Newsfeed extends React.Component {
         }
         this.props.onModifyData(updatedData);
     }
+    
     getNextPage(){
         let nextPage = this.props.currentPage;
 
@@ -85,6 +88,10 @@ class Newsfeed extends React.Component {
         this.props.history.goBack();
         this.props.onUpdatePage(this.props.currentPage-1);
     }
+
+    /* type: function 
+       description: hides the particular news item and stores the corresponding id in the cookie
+    */
     hide(item){
       let hiddenIds = [];
        if(Cookies.get('hidden')){
@@ -154,7 +161,7 @@ class Newsfeed extends React.Component {
 
                         <tr key={newsItem.objectID} className="flex-table row" role="rowgroup">
                           <td className="flex-row first comments " role="cell">{newsItem.num_comments ? newsItem.num_comments : 0}</td>
-                          <td className="flex-row comments" role="cell">{newsItem.points}</td>
+                          <td className={`${newsItem.points >100 ? "vote" :""} flex-row comments`} role="cell">{newsItem.points}</td>
                           <td className="flex-row comments" role="cell"><FontAwesome
                                 className="fas fa-caret-up"
                                 name="caret"

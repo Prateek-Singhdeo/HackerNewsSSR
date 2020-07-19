@@ -11,13 +11,13 @@ const plugins = [
     }),
 ];
 
-// if ( !dev ) {
-//     plugins.push( new BundleAnalyzerPlugin( {
-//         analyzerMode: "static",
-//         reportFilename: "webpack-report.html",
-//         openAnalyzer: false,
-//     } ) );
-// }
+if ( !dev ) {
+    plugins.push( new BundleAnalyzerPlugin( {
+        analyzerMode: "static",
+        reportFilename: "webpack-report.html",
+        openAnalyzer: false,
+    } ) );
+}
 
 module.exports = {
     mode: dev ? "development" : "production",

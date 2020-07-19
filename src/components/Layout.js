@@ -1,14 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import routes from "../routes";
-import  "./src/components/Layout.css";
 
 class Layout extends React.Component {
     constructor() {
         super();
-        this.state = {
-            title: "Welcome to React SSR!",
-        };
     }
 
     render() {
