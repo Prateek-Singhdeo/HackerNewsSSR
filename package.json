@@ -35,17 +35,17 @@
     "serialize-javascript": "^2.1.1",
     "babel-register": "^6.26.0",
     "babel-plugin-css-modules-transform": "^1.6.2",
-    "babel-plugin-dynamic-import-node": "^2.3.0"
-  },
-  "devDependencies": {
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-preset-env": "^1.6.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.3.13",
-    "babel-polyfill": "^6.0.16",
+    "babel-polyfill": "^6.0.16"
+  },
+  "devDependencies": {
     "bundlesize": "^0.16.0",
     "css-loader": "^3.0.0",
     "enzyme": "^3.2.0",
