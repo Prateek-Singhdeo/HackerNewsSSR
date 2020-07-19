@@ -1,4 +1,4 @@
-import Newsfeed from "./components/Newsfeed";
+import Newsfeed from "./components/newsfeed";
 
 export default [
     {
