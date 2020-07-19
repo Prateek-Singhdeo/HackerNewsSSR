@@ -7,7 +7,7 @@ import { parse } from 'url';
 import { Helmet } from 'react-helmet';
 import TimeAgo from 'react-timeago'
 import FontAwesome from 'react-fontawesome'
-// import "./newsfeed.css"
+import "./Newsfeed.css";
 
 class Newsfeed extends React.Component {
     constructor ( props ) {
