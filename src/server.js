@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 import path from "path";
 import React from "react";
 import serialize from "serialize-javascript";
