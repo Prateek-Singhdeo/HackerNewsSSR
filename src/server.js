@@ -17,8 +17,12 @@ import * as actionTypes from './store/actions/actionTypes';
 const app = express();
 app.use(cookieParser())
 app.use( express.static( path.resolve( __dirname, "../dist" ) ) );
-// app.use("/public" ,express.static(path.resolve(__dirname, "../public")));
+app.use("/public" ,express.static(path.resolve(__dirname, "../public")));
 const port = process.env.PORT || 3000;
+
+app.get('/favicon.ico',(req, res) => {
+    res.sendFile('/public/favicon.ico');
+});
 
 app.get( "/*", ( req, res ) => {
     const context = { };
@@ -87,6 +91,7 @@ function htmlTemplate( reactDom, reduxState, helmet) {
         <html lang="en">
         <head>
             ${helmet.meta.toString()}
+            <link rel="icon" href="/favicon.ico" />
             <link rel="stylesheet" type="text/css" href="./styles.css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </head>
