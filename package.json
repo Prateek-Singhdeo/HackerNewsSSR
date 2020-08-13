@@ -33,7 +33,7 @@
     "react-timeago": "^4.4.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "serialize-javascript": "^2.1.1",
+    "serialize-javascript": "^4.0.0",
     "babel-register": "^6.26.0",
     "babel-plugin-css-modules-transform": "^1.6.2",
     "babel-plugin-dynamic-import-node": "^2.3.0",
